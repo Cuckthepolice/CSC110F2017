@@ -19,44 +19,45 @@ public class Homework4Review {
         
         //Question1 
         byte radius = 3;
-        System.out.println("Area of a cir with radius "+Math.PI*radius*radius);
+        System.out.printf("Area of a circle with radius %d = %.2f m%c \n",radius,Math.PI*radius*radius,(char)178);
         //Circumference of the circle
-        System.out.println("Circumference "+2*Math.PI*radius);
+        System.out.printf("%25s %.2f m \n","Circumference",2*Math.PI*radius);
         //Question #3
         short base  = 4;
         double height = 7.3;
-        System.out.println("Area of triangle "+ .5*base*height);
+        System.out.printf("Area of triangle %.2f m%c \n", .5*base*height,(char)178);
         
         //Question #4
         byte x = 8;
         byte y = 9;
-        System.out.println("Radius of a unit circle " + Math.sqrt(x*x+y*y));
+        System.out.printf("Radius of a unit circle %.2f m \n" , Math.sqrt(x*x+y*y));
         
         //Question #5
         double celsius = 6;
-        System.out.println("Fahrenheit " + (celsius*9/5+32));
+        System.out.printf("Fahrenheit %.2f %cF \n" , (celsius*9/5+32),(char)176);
         //Question #6
         short fahrenheit = 212;
-        System.out.println("Celsius "+ (fahrenheit-32)*5/9);
+        System.out.printf("Celsius %.2f %cC \n", (double)(fahrenheit-32)*5/9,(char)176);
         
         //Question 7
         short futureValue = 100;
         double rate = 0.05;
         byte n = 5;
-        System.out.println("Present value "+(futureValue/Math.pow((1+rate), n)));
+        System.out.printf("Present value is $%,.2f \n",(futureValue/Math.pow((1+rate), n)));
         
         //Question 8
         double gravity = 6.67408E-11;
         double massE = 5.972E24;
         double massM = 7.34767309E22;
         int distance = (int)3.844E8;
-        System.out.println("Force due to gravity between mooon and earth " + 
-         (gravity*massE*massM)/Math.pow(distance, 2)       );
+        double forceDuetoGravity = (gravity*massE*massM)/Math.pow(distance, 2);
+      
+        System.out.printf("Force due to gravity between mooon and earth %,10.0f newtons.\n", forceDuetoGravity);
         
         //Question #9
         int mass = 3000;
         short velocity = 60;
-        System.out.println("Kinetic NRG = " + (0.5*mass*velocity*velocity)+(" lbs/mph^2"));
+        System.out.printf("Kinetic energy = %,.0f lbs%cmph%c \n", (0.5*mass*velocity*velocity),(char)215,(char)178);
         
         //Question 10
         double upProbability = 0.7;
@@ -65,7 +66,7 @@ public class Homework4Review {
         int downValue = 40;
         double rfr = 0.05;
         double stockValue = (upProbability*upValue+downProbability*downValue)/(1+rfr);
-        System.out.println("The expected value of my stock $"+ stockValue);
+       
         System.out.printf("The expected value of my stock is $%.4f\n", stockValue);
                 
         
