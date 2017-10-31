@@ -68,6 +68,16 @@ public class Class16 {
                 
             }
         }
+        
+        //times table
+        for (int j = 1;j<=20;j++){            
+            for(int k = 1;k<=20;k++){
+                System.out.print(j*k+"      ");
+                //use printf to control space
+            }
+            System.out.println(" ");
+        }
+        
     }
     
 }
