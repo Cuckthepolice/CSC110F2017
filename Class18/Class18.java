@@ -28,11 +28,13 @@ public class Class18 {
 //        System.out.println(reader.nextLine());
 //        System.out.println(reader.nextLine());
 //        System.out.println(reader.nextLine());
-        
+        int counter = 0;
         while(reader.hasNextLine()){
             System.out.println(reader.nextLine());
+            reader.nextLine();
+            counter++;
         }
-        
+        System.out.println("We have read "+counter+" lines");
         
     }
     
